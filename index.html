@@ -1,0 +1,166 @@
+<!doctype html>
+<!--
+    Home by [Abhishek Kumar](mailto:kumarab@hcl.com), [HCL Techologies Ltd.](http://www.hcltech.com).
+    This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.]
+    (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <title>DoC</title>
+    <meta name="author" content="Abhishek Kumar">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="css/material.teal-indigo.min.css">
+    <link rel="stylesheet" type="text/css" href="css/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="lib/mdl/com/getmdl-select.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="app-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+        <header class="app-header mdl-layout__header mdl-layout__header--scroll mdl-color-text--white-800">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Declaration of Conformity</span>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div id="drawer" class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#addNewTransaction">Add New Transaction</a>
+                <a class="mdl-navigation__link" href="#listAllTransactions">List All Transactions</a>
+            </nav>
+        </div>
+        <div class="app-ribbon">
+            <div class="doc-feedback"></div>
+        </div>
+        <main class="app-main mdl-layout__content">
+            <div class="app-container mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                <div class="app-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                    <div id="sections">
+                        <section id="addNewTransaction" class="hide">
+                            <div class="app-crumbs mdl-color-text--grey-500">
+                                Intranet &rarr; Add New Transaction
+                            </div>
+                            <h4>Declaration of Conformity (DoC)</h4>
+                            <p>For tracking purpose, device taken from / returened to / given to particular person need to be declared here.</p>
+                            <form action="#">
+                                <h5>Your name</h5>
+                                <p>Enter your name here. Your full-name is preferred but if you're providing only partial name then make sure it's unique in the premise to avoid any confusion.</p>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="ant_YourName" name="YourName">
+                                    <label class="mdl-textfield__label" for="ant_YourName">Your answer</label>
+                                    <span class="mdl-textfield__error"></span>
+                                </div>
+                                <h5>Material exchanged</h5>
+                                <p>Enter the name or description of the material exchanged in between you and the other person.</p>
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows="3" id="ant_MaterialExchanged" name="MaterialExchanged"></textarea>
+                                    <label class="mdl-textfield__label" for="ant_MaterialExchanged">Your answer</label>
+                                    <span class="mdl-textfield__error"></span>
+                                </div>
+                                <h5>Action performed</h5>
+                                <ul class='mdl-list'>
+                                    <li class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-action">
+                                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ant_ActionPerformed_1">
+                                            <input type="radio" id="ant_ActionPerformed_1" class="mdl-radio__button" name="ActionPerformed" value="Taken from" checked />
+                                            </label>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-content">
+                                            <span>Taken from</span>
+                                        </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-action">
+                                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ant_ActionPerformed_2">
+                                            <input type="radio" id="ant_ActionPerformed_2" class="mdl-radio__button" name="ActionPerformed" value="Returned to" />
+                                            </label>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-content">
+                                            <span>Returned to</span>
+                                        </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-action">
+                                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ant_ActionPerformed_3">
+                                            <input type="radio" id="ant_ActionPerformed_3" class="mdl-radio__button" name="ActionPerformed" value="Returned to" />
+                                            </label>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-content">
+                                            <span>Given to</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <h5>Other person's name</h5>
+                                <p>Your the other person's name from which you have dealt with. Their full-name is preferred but if you're providing only partial name then make sure it's unique in the premise to avoid any confusion. </p>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="ant_OtherPersonName" name="OtherPersonName">
+                                    <label class="mdl-textfield__label" for="ant_OtherPersonName">Your answer</label>
+                                    <span class="mdl-textfield__error"></span>
+                                </div>
+                                <p>
+                                    <button type="submit" class="doc-vgap mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
+                                </p>
+                            </form>
+                        </section>
+                        <section id="listAllTransactions" class="hide">
+                            <div class="app-crumbs mdl-color-text--grey-500">
+                                Intranet &rarr; List All Transactions
+                            </div>
+                            <h4>Transactions List</h4>
+                            <table class="doc-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Your Name</th>
+                                        <th>Material Exchanged</th>
+                                        <th>Action Performed</th>
+                                        <th>Other Person Name</th>
+                                        <th>Timestamp</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>[Id]</td>
+                                        <td>[YourName]</td>
+                                        <td>[MaterialExchanged]</td>
+                                        <td>[ActionPerformed]</td>
+                                        <td>[OtherPersonName]</td>
+                                        <td>[Timestamp]</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer class="app-footer mdl-mini-footer">
+                <div class="mdl-mini-footer--left-section">
+                    <ul class="mdl-mini-footer--link-list">
+                        <li><a href="#">&copy; 2016</a></li>
+                        <li><a href="http://www.hcltech.com">HCL Technologies Ltd.</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script type="text/javascript" src="lib/mdl/material.js"></script>
+    <script type="text/javascript" src="lib/mdl/com/getmdl-select.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="lib/marked/marked.js"></script>
+
+    <script type="text/javascript" src="js/enzinak.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

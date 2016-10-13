@@ -1,0 +1,167 @@
+.hide {
+    display: none;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* App */
+
+.app-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: indigo;
+    flex-shrink: 0;
+}
+.app-main {
+    margin-top: -35vh;
+    flex-shrink: 0;
+}
+.app-header .mdl-layout__header-row {
+    padding-left: 40px;
+    background-color: #3d0069;
+}
+.app-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+.app-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+.app-layout.is-small-screen .app-content {
+    padding: 40px 28px;
+}
+.app-content h3 {
+    margin-top: 48px;
+}
+.app-footer {
+    padding-left: 40px;
+}
+.app-footer .mdl-mini-footer--link-list a {
+    font-size: 13px;
+}
+#view-source {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+/* Title */
+
+.mdl-layout__drawer-button {
+    background-color: transparent !important;
+}
+
+.mdl-layout-title {
+    margin-left: 1.5em;
+}
+
+/* Drawer */
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: #333;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.active {
+    background-color: #40C4FF;
+}
+
+/* Form */
+
+section .mdl-textfield {
+    width: 100%;
+}
+section .mdl-list {
+    width: 250px;
+}
+section .mdl-list .demo-list-radio {
+    display: inline;
+}
+section .mdl-list .mdl-list__item-secondary-content {
+    margin-top: 0.5em;
+}
+section .mdl-list .mdl-list__item {
+    height: 48px;
+}
+section button.doc-vgap {
+    margin-top: 24px;
+}
+
+/* Feedback */
+
+.doc-feedback {
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.doc-feedback.success {
+    background-color: forestgreen;
+}
+
+.doc-feedback.danger {
+    background-color: firebrick;
+}
+
+.doc-feedback.info {
+    background-color: royalblue;
+}
+
+.doc-feedback.warning {
+    background-color: goldenrod;
+}
+
+
+/* Table */
+
+table.doc-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.doc-table td,
+table.doc-table th {
+    border-top: 1px solid #ddd;
+    padding: 8px 8px;
+}
+
+table.doc-table tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+table.doc-table td.statusOpen {
+    color: forestgreen;
+}
+table.doc-table td.statusClosed {
+    color: indianred;
+}
+
+#listAllTransactions table.doc-table thead th {
+    background-color: #4051B5;
+    color: whitesmoke;
+    font-weight: normal;
+    border-top-color: #32409F;
+}
+
+#listAllTransactions table.doc-table th,
+#listAllTransactions table.doc-table td {
+    text-align: left;
+}
+
+#listAllTransactions table.doc-table td.doc-detail {
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}
